@@ -707,3 +707,128 @@ export const SectionFrame = styled.div`
  
 }
 `;
+
+export const RecomendationStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 16vb;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-color: #F7F7F7;
+    text-align: center;
+
+
+
+
+.optionRecomendation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    padding:  10px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 40px;
+  }
+
+  .optionRecomendation a {
+    text-decoration: none;
+    color: #00000050;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+      background-color:#3E86F5;
+    color: #fff;
+    padding:  10px;
+    border-radius: 10px;
+    }
+  }
+
+  .active{
+    background-color:#3E86F5;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  .recomendationContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  flex-wrap: wrap;
+
+  }
+
+  .card{
+    width: 280px;
+    height: 320px;
+    display: flex;
+    padding-inline: 15px;
+    padding-block: 15px;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: #fff;
+    gap: 5px;
+
+  }
+
+  .card .image-content{
+    position: relative;
+
+  }
+
+  .card img{
+    width: 250px;
+    height: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-bottom: 10px;
+
+  }
+
+  .card .avaliacao{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    padding: 5px 12px;;
+    background: #ffffff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .card .local, .name{
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .card .name{
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .card .local{
+    font-size: 16px;
+    color: #00000050;
+    font-weight: 600;
+  }
+
+
+  @media screen and (max-width: 768px) {
+      padding-inline: 36px !important;
+      padding-top: 500px;
+  }
+`
+
+
+
+
