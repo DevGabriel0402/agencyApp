@@ -4,6 +4,7 @@ import Search from "./components/Search/Search"
 import OfferSpecial from "./components/OfferSpecial/OfferSpecial"
 import About from "./components/About/About"
 import Recomendation from "./components/Recomentation/Recomentation"
+import { Testimonial } from "./components/Testimonial/Testimonial"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <OfferSpecial />
       <About />
       <Recomendation />
+      <Testimonial />
     </>
 
   )

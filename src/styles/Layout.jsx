@@ -829,6 +829,143 @@ export const RecomendationStyle = styled.div`
   }
 `
 
+export const TestimonialStyle = styled.div`
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-inline: 16vb;
+  background-color: #f7f7f7;
+  padding-block: 35px;
+  flex-wrap: wrap;
+
+
+  /* Card */
+.cardItem{
+  display: none;
+  transition: opacity 0.5s;
+  animation: slideIn 0.5s forwards;
+  width: 450px;
+  height: 220px;
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 0 10px 1px #00000020;
+  text-align: center;
+}
+
+.cardItem.active {
+  display: flex;
+  opacity: 1;
+}
+
+/* Foto de quem está comentando */
+
+.conteudo-imagem{
+  position: relative;
+
+}
+
+.group-image{
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+}
+
+.conteudo-imagem  img{
+  width: 100px;
+  border-radius: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 10px solid #ffffff;
+  position: relative;
+  bottom: -90px;
+  right: 155px;
+  z-index: 10;
+  box-shadow: 1px 0 10px 1px #00000020;
+ 
+
+  
+}
+
+.conteudo-imagem .avaliacao {
+    position: absolute;
+    z-index: 20;
+    bottom: -90px;
+  right: 155px;
+    background-color: #ffffff;
+    padding: 2.5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 1px 0 10px 1px #00000020;
+
+
+  
+}
+
+/* botoes */
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+
+}
+
+.btn a{
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 
 
+
+
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.username{
+  margin-top: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.cargo{
+  color: #00000050;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+`
